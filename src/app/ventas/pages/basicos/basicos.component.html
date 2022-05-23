@@ -4,16 +4,19 @@
 
   <div class="grid">
     <div class="col">
-      <p-card header="uppercase">1</p-card>
+      <p-card header="uppercase" [subheader]="nombreLower | uppercase">
+        {{nombreLower | uppercase}}
+      </p-card>
     </div>
     <div class="col">
-      <p-card>2</p-card>
+      <p-card header="lowercase" [subheader]="nombreUpper | lowercase">
+        {{nombreUpper | lowercase}}
+      </p-card>
     </div>
     <div class="col">
-      <p-card>3</p-card>
-    </div>
-    <div class="col">
-      <p-card>4</p-card>
+      <p-card header="titelcase" [subheader]="nombreCompleto | titlecase">
+        {{nombreCompleto | titlecase}}
+      </p-card>
     </div>
   </div>
 </div>
