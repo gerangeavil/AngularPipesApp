@@ -3,17 +3,17 @@
   <p>Pipes incluídos en Angular - Usualmente en el Common Module.</p>
 
   <div class="grid">
-    <div class="col">
+    <div class="col-4">
       <p-card header="uppercase" [subheader]="nombreLower | uppercase">
         original: {{nombreLower}}
       </p-card>
     </div>
-    <div class="col">
+    <div class="col-4">
       <p-card header="lowercase" [subheader]="nombreUpper | lowercase">
         original: {{nombreUpper}}
       </p-card>
     </div>
-    <div class="col">
+    <div class="col-4">
       <p-card header="titelcase" [subheader]="nombreCompleto | titlecase">
         original: {{nombreCompleto}}
       </p-card>
@@ -26,7 +26,7 @@
   <p>Pipe para mostrar las fechas.</p>
 
   <div class="grid">
-    <div class="col">
+    <div class="col-6">
       <p-card header="Pipe Fecha">
         <ul>
           <li>Fecha</li>
@@ -43,7 +43,7 @@
         </ul>
       </p-card>
     </div>
-    <div class="col">
+    <div class="col-6">
       <p-card header="Valor">
         <ul>
           <li>{{fecha}}</li>
